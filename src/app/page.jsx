@@ -1,34 +1,47 @@
+"use client"
+import Link from "next/link";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 
 const Homepage = () => {
   return   ( 
-  <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-    {/*img */}
-   <div className="h-1/2 lg:h-full lg:w-1/2 position-relative">
-      <Image src="/hero.png" alt="me" layout="fill" className="object-contain"/>
-   </div>
+    <motion.div 
+    className="h-full"
+    initial={{y:"-200vh"}}
+    animate={{y:"0%"}}
+    transition={{duration:1}}
+    >
+   <div className="h-full overflow-scroll flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+        {/* IMAGE CONTAINER */}
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative border-green-500 z-[10]">
+          <Image src="/hero.png" alt="" fill className="object-contain" />
+        </div>
    {/*body*/}
-   <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col  p-5 gap-8 items-center justify-center">
-       <h1 className="text-4xl md:text-6xl font-bold mb-4"> 
+   <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center z-[20]">
+       <h1 className="text-xl md:text-xl font-bold "> 
         Designing Tomorrows Web Today: Welcome to My Frontend Showcase
        </h1>
-     <p className="font-semibold md:text-xl mb-4">Discover immersive web experiences and cutting-edge designs . As a skilled developer, I specialize in crafting 
+     <p className="font-semibold md:text-sm ">Discover immersive web experiences and cutting-edge designs . As a skilled developer, I specialize in crafting 
       captivating interfaces that engage users and elevate brands. Explore
        my innovative projects and lets collaborate to bring your digital vision to
        life. Welcome to the forefront of web design!</p>
-        {/*body*/}
-       <div className="w-full flex gap-4">
+  
+       <div className="w-full flex gap-10">
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              View My Work
+              <Link href="/about">
+              About Me
+              </Link>
             </button>
             <button className="p-4 rounded-lg ring-1 ring-black">
+              <Link  href="/contact">
               Contact Me 
+              </Link>
             </button>
   </div>
   </div>
 </div>
+</motion.div>
   );
 };
 
-export default Homepage
+export default Homepage;
