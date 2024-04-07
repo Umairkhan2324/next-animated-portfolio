@@ -145,11 +145,11 @@ const AboutPage=()=>{
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    Web Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
+                    I led web development, offering expertise 
                     frameworks.{" "}
                   </div>
                   {/* JOB DATE */}
@@ -158,7 +158,7 @@ const AboutPage=()=>{
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
+                    TechnoHacks
                   </div>
                 </div>
                 {/* CENTER */}
@@ -188,20 +188,20 @@ const AboutPage=()=>{
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Content Writer and Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
+                    I spearheaded application development,content generation,and
                     leveraging advanced skills.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                    2024- present {" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    Marketing Detectives
                   </div>
                 </div>
               </div>
@@ -220,7 +220,7 @@ const AboutPage=()=>{
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    2023-2024{" "}
                   </div>
                 </div>
                 {/* CENTER */}
